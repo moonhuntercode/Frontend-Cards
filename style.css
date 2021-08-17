@@ -1,0 +1,131 @@
+/*Poppins*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+/*Variables*/
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --very-dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --very-light-gray: hsl(0, 0%, 98%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.center {
+    text-align: center;
+}
+
+h1 {
+    padding-top: 1em;
+    opacity: 0.7;
+}
+
+h1 span {
+    font-weight: 200;
+    color: var(--grayish-blue);
+}
+
+#slogan {
+    opacity: 0.5;
+    padding-top: 1em;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 73.3333333333em;
+    height: 26em;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 175px;
+    margin-right: 20px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 9px 20px 6px rgba(0, 0, 0, 0.35);
+    -moz-box-shadow: 0px 9px 20px 6px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 9px 20px 6px rgba(0, 0, 0, 0.35);
+    padding: 20px;
+}
+
+.card h3 {
+    opacity: 0.8;
+}
+
+.card p {
+    font-size: 0.9em;
+    opacity: 0.7;
+    margin-top: 0.5em
+}
+
+.card img {
+    align-self: flex-end;
+}
+
+.s-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/*Genel*/
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mt-auto {
+    margin-top: auto
+}
+
+.as-c {
+    align-self: center;
+}
+
+/*Border Top*/
+.orange {
+    border-top: 4px solid var(--orange);
+}
+
+.red {
+    border-top: 4px solid var(--red);
+}
+
+.cyan {
+    border-top: 4px solid var(--cyan);
+}
+
+.blue {
+    border-top: 4px solid var(--blue);
+}
+
+/*breakpoints*/
+
+@media screen and (max-width:1000px) {
+    .blue {
+        margin-top: 1em;
+    }
+
+    .red {
+        margin-top: 1em;
+    }
+}
